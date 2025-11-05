@@ -41,7 +41,6 @@ Paciencia, seguramente no saldrá a la primera.
 
 
 ## Recursos Adicionales
-
 Puedes consultar la documentación de HTML y CSS para obtener ayuda adicional:
 
 - [HTML MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)

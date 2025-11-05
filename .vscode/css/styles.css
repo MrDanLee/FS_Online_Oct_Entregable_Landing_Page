@@ -3,19 +3,19 @@
    License: none (public domain)
 */
 :root {
-  --background:white ;
-  --primary: aqua;
+  --background:white;
+  --primary: #2b9298;
   --secondary: pink;
-  --text:aqua;
+  --text:#7ebab3;
   --link-hover:blue;
   --brightness:black;
   --scrollbar:pink;
-  --font-light: 300;
-  --font--normal: 400;
-  --font-bold: 900;
+  --font-light: 100;
+  --font-normal: 400;
+  --font-bold: 700;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html,
 body,
 div,
@@ -147,11 +147,73 @@ table {
   border-spacing: 0;
 }
 
+/* Codigo de la lading */
+
 body {
-  font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: var(--font--normal);
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--font-normal);
+  font-style: normal;
+  background-color: var(--background);
+  
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+}
+
+.important {
+  display: flex;
+  gap: 7px;
+}
+
+header a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e69a9e;
+  padding: 10px;
+  height: 15px;
+  margin:15px;
+  border-radius: 3px;
+  gap: 5px;
+}
+
+.idioma-texto {
+  color: white;
+  font-weight: var(--font-light);
+  font-size: small;
+}
+
+.banderaEspaña {
+  width: 25px;
+  height: 17px;
+}
+
+.planet-skin-1, 
+.planet-skin-2 {
+  font-weight: var(--font-bold);
+}
+
+.planet-skin-1 {
+  color: var(--primary);
+}
+
+.planet-skin-2 {
+  color: var(--secondary);
 }
