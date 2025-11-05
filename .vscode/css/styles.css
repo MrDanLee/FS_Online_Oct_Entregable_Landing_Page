@@ -6,10 +6,10 @@
   --background:white;
   --primary: #2b9298;
   --secondary: pink;
-  --text:#7ebab3;
+  --text:white;
   --link-hover:blue;
-  --brightness:black;
-  --scrollbar:pink;
+  --brightness:#483b3b31;
+  --scrollbar:hsl(350, 100%, 88%);
   --font-light: 100;
   --font-normal: 400;
   --font-bold: 700;
@@ -147,7 +147,9 @@ table {
   border-spacing: 0;
 }
 
-/* Codigo de la lading */
+/* Codigo de la landing */
+
+/* CSS del Header */
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -155,21 +157,22 @@ body {
   font-weight: var(--font-normal);
   font-style: normal;
   background-color: var(--background);
-  
+  z-index: 999;
 }
 
-.container-nav {
+header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  background-color: var(--background);
+  z-index: 999;
 }
 
-.container-links {
-  display: flex;
-  justify-content: space-around;
-  gap: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 40px;
+header a {
+  color: var(--primary);
+  text-decoration: none;
 }
 
 .important {
@@ -177,9 +180,28 @@ body {
   gap: 7px;
 }
 
-header a {
+.planet-skin-1, 
+.planet-skin-2 {
+  font-weight: var(--font-bold);
+}
+
+.planet-skin-1 {
   color: var(--primary);
-  text-decoration: none;
+}
+
+.planet-skin-2 {
+  color: var(--secondary);
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  /* gap: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px; */
 }
 
 .idioma {
@@ -189,7 +211,7 @@ header a {
   background-color: #e69a9e;
   padding: 10px;
   height: 15px;
-  margin:15px;
+  margin:10px;
   border-radius: 3px;
   gap: 5px;
 }
@@ -205,15 +227,81 @@ header a {
   height: 17px;
 }
 
-.planet-skin-1, 
-.planet-skin-2 {
-  font-weight: var(--font-bold);
+/* .container-nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
 }
 
-.planet-skin-1 {
-  color: var(--primary);
+.container-links {
+  display: flex;
+  gap: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  justify-content: space-around;
+} */
+
+/* CSS del Masthead */
+
+.masthead {
+  position: relative;
+  width: 100%;
 }
 
-.planet-skin-2 {
-  color: var(--secondary);
+.masthead img {
+  width: 100%;
+}
+
+.masthead article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* height: 100; */
+  width: 800px;
+  border: none;
+  color: var(--text);
+  background-color: var(--brightness);
+}
+
+.masthead p {
+  font-size: 14px;
+  font-weight: var(--font-light);
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+.masthead h2 {
+  font-weight: var(--font-light);
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+  letter-spacing: 3px;
+}
+
+.masthead button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  color: var(--text);
+  font-weight: var(--font-light);
+  border: none;
+  background-color: var(--secondary);
+} 
+
+.masthead button:first-of-type {
+  /* margin: 0 auto; */
+  width: 110px;
+  height: 45px;
+  margin-left: 45px;
+  margin-bottom: 1px;
+}
+
+.masthead button:last-of-type {
+  border-radius: 30px;
+  /* margin: 0 auto; */
+  width: 200px;
+  height: 50px;
 }
